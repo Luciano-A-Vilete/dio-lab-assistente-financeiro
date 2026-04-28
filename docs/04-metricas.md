@@ -28,23 +28,25 @@ Crie testes simples para validar seu agente:
 
 ### Teste 1: Consulta de gastos
 - **Pergunta:** "Quanto gastei com alimentação?"
-- **Resposta esperada:** Valor baseado no `transacoes.csv`
+- **Resposta esperada:** Menciona R$ 570 (Supermercado R$ 450 + Restaurante R$ 120)
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ### Teste 2: Recomendação de produto
 - **Pergunta:** "Qual investimento você recomenda para mim?"
-- **Resposta esperada:** Produto compatível com o perfil do cliente
+- **Resposta esperada:** Sugere Tesouro Selic ou CDB (perfil moderado, sem risco alto)
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ### Teste 3: Pergunta fora do escopo
-- **Pergunta:** "Qual a previsão do tempo?"
-- **Resposta esperada:** Agente informa que só trata de finanças
+- **Pergunta:** "Qual a previsão do tempo para amanhã?"
+- **Resposta esperada:** Recusa educadamente e redireciona para finanças
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
-### Teste 4: Informação inexistente
+### Teste 4: Produto inexistente
 - **Pergunta:** "Quanto rende o produto XYZ?"
-- **Resposta esperada:** Agente admite não ter essa informação
+- **Resposta esperada:** Admite não ter essa informação sem inventar valores
 - **Resultado:** [ ] Correto  [ ] Incorreto
+
+> **Como rodar os testes:** `python src/test_agente.py`
 
 ---
 
